@@ -15,9 +15,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.activiti.runtime.api.model.Task;
 import org.activiti.runtime.api.query.Page;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Slf4j
 @SpringBootApplication
+@EnableScheduling
 public class ActivitiApplication implements CommandLineRunner {
 
     @Autowired
